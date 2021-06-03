@@ -75,7 +75,7 @@ def shard(string, width, depth, rest_only=False):
 
     """
 
-    for i in xrange(depth):
+    for i in range(depth):
         yield string[(width * i):(width * (i + 1))]
 
     if rest_only:

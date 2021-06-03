@@ -77,7 +77,7 @@ class CAStorage(FileSystemStorage):
         self.keep_extension = keep_extension
 
     @staticmethod
-    def get_available_name(name):
+    def get_available_name(name, max_length=None):
         """Return the name as-is; in CAS, given names are ignored anyway."""
 
         return name
